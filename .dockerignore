@@ -1,0 +1,11 @@
+*
+!requirements.txt
+!manage.py
+!news_site/
+!news_site/**
+!news/
+!news/**
+**/__pycache__
+**/*.pyc
+**/*.sqlite3
+**/.env*
