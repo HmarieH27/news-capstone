@@ -1,3 +1,4 @@
+"""Authenticated REST resources and the internal approval receipt endpoint."""
 
 from smtplib import SMTPException
 import requests

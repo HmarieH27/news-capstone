@@ -65,6 +65,7 @@ class Newsletter(models.Model):
 
 
 class ApprovalLog(models.Model):
+    """Receipt created by the internal approved-article API."""
 
     article = models.OneToOneField(
         Article, on_delete=models.CASCADE, related_name="approval_log"
@@ -73,6 +74,7 @@ class ApprovalLog(models.Model):
 
 
 class ApprovalDelivery(models.Model):
+    """Persist delivery progress so an editor can retry a failed integration."""
 
     article = models.OneToOneField(
         Article, on_delete=models.CASCADE, related_name="delivery"
