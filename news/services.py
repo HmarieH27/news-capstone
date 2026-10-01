@@ -1,3 +1,4 @@
+"""Approve once; email readers individually and POST to our logging endpoint."""
 
 import requests
 from django.conf import settings
